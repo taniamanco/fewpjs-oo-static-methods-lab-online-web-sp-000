@@ -8,6 +8,7 @@ class Formatter {
   }
   
   static titleize( sentence ) {
+    let exceptions = [ 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from' ]
     let result = [];
     let splitedArr = sentence.split( " " )
     for ( let i = 0; i < splitedArr.length; i++ ) {
